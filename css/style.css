@@ -1,0 +1,26 @@
+
+body 
+{
+  position:absolute;
+  left: 35%;
+  top: 35%;
+  text-align: center;
+  background-image: url(https://media0.giphy.com/media/1154CgmtPPa4lq/200.gif);
+  background: #000000;
+  color:white
+}
+
+h1{
+  font-size: 4em;
+}
+
+input[type=text] {
+  width: 200px;
+}
+
+li
+{
+  text-align: left;
+  list-style-type: '→   ';
+  margin: 10px
+}
