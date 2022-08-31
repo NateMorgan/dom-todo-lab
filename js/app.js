@@ -8,9 +8,9 @@ submitButton.addEventListener('click', function(){
     document.body.style.background = "#000000"
     let newToDo = document.createElement(`li`)
     newToDo.textContent = textInput.value
-    newToDo.addEventListener('click', function(){
-      newToDo.remove()
-    })
+    // newToDo.addEventListener('click', function(){
+    //   newToDo.remove()
+    // })
     toDoList.appendChild(newToDo)
     textInput.value = ""
     
@@ -22,6 +22,10 @@ submitButton.addEventListener('click', function(){
 resetButton.addEventListener('click',function (){
   toDoList.innerHTML = ""
   document.body.style.background = "#000000"
+})
+
+toDoList.addEventListener('click', function(evt){
+  evt.target.remove()
 })
 
 
